@@ -1,0 +1,826 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+/*NAVIGACIJA*/
+.site-header {
+    background-color: #dbd6d7;
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 9999;
+}
+
+.container, .container1, .container2 {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.site-header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.main-nav a {
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 17px;
+    margin: 0 5px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+.main-nav a:hover, .active {
+    color: #fff;
+    background-color: #918d8d;
+    border-radius: 5px;
+}
+
+/*HERO*/
+.hero {
+    background-image: url("../images/medus-ramune1.jpg");
+    background-color: #dbd6d7;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero .container {
+    padding: 160px 0 340px;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+
+.hero h1, .products h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    max-width: 632px;
+    margin: 0 auto;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    line-height: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    max-width: 632px;
+    margin: 0 auto;
+}
+
+
+.hero p {
+    color: #fff;
+}
+
+.hero a, .products .container1 .container a {
+    font-size: 1.125rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-decoration: none;
+    background-color: #fbad27;
+    padding: 16px 58px 19px;
+    border-radius: 24px;
+}
+
+.hero a:hover,
+.products .container1 .container a:hover {
+    background-color: #ff810b;
+}
+
+/*CONTENT1, PO HERO ESANTI DALIS*/
+
+.content1 {
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #4a4a4a;
+    font-size: 3.125rem;
+    line-height: 4.0625rem;
+    letter-spacing: 0.02em;
+}
+
+.section-heading p {
+    color: #757575;
+    max-width: 970px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5625;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.advantages {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #757575;
+    width: 300px;
+    padding: 45px 45px 0;
+    margin: 80px auto 0;
+}
+
+.section-content {
+    max-width: 970px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.advantages i {
+    color: #fbad27;
+    font-size: 2.5rem;
+}
+
+.section-content h3 {
+    color: #4a4a4a;
+    font-size: 1.125rem;
+    line-height: 1.025rem;
+    letter-spacing: 0.02em;
+}
+
+/*TESTIMONIALS-KARUSELĖ*/
+
+section .container1 {
+    padding: 50px 0 150px;
+}
+
+.karusele {
+    flex-direction: column;
+    padding: 0 auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.karusele .section-heading {
+    max-width: 970px;
+    align-content: center;
+}
+
+.carousel {
+    max-width: 970px;
+    justify-content: center;
+    align-content: center;
+    }
+    
+#quoteCarousel>div {
+    justify-content: center;
+}
+
+.flex {
+    display:flex;
+}
+
+.bg-white {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #616161;
+    padding: 40px;
+    box-shadow: 16px 30px 16px #ebe9e6;
+    border-radius: 8px;
+    margin: 0 100px;
+    max-width: 400px;
+}
+
+.font-semibold {
+    font-weight: 700;
+}
+
+.bg-white img {
+    border-radius: 8px;
+    max-width: 170px;
+    max-height: 170px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css iš fancyapp*/
+#quoteCarousel {
+    --carousel-button-svg-width: 36px;
+    --carousel-button-svg-height: 36px;
+    
+    --carousel-button-svg-stroke-width: 1;
+    }
+    
+    #quoteCarousel blockquote {
+    position:relative;
+    }
+    
+    #quoteCarousel::before,
+    #quoteCarousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    z-index: 1;
+    }
+    
+    #quoteCarousel::before {
+    left: 0;
+    background: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 0, #fff 90%, #fff);
+    }
+    
+    #quoteCarousel::after {
+    right: 0;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff 90%, #fff);
+    }
+    
+    .carousel__button {
+    z-index: 10;
+    }
+
+/*ABOUT-ME*/
+.about-me, .contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+.about {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #616161;
+    padding: 40px;
+    box-shadow: 16px 30px 16px #ebe9e6;
+    border-radius: 8px;
+    margin: 0 100px;
+    max-width: 800px;
+}
+
+.section-about .about {
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.about img, .product img {
+    border-radius: 24px;
+    max-width: 340px;
+    max-height: 340px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about p, .product p {
+    text-align: left;
+    padding: 0 40px;
+}
+
+/*KONTAKTINĖ FORMA IR NAUJIENLAIŠKIS*/
+.contact .container1 {
+    margin-top: 0;
+    padding-bottom: 60px;
+    
+}
+
+.contact .section-content {
+    width: 80%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.contact .section-content .contact-form .input-row {
+    margin-bottom: 30px;
+}
+.contact .section-content .contact-form .input-row input {
+    background-color: #ccc6c6;
+    border-color: #616161;
+    padding: 20px 25px;
+    border-radius: 8px;
+    width:calc(50% - 18px);
+}
+
+.contact .section-content .contact-form .input-row input:first-child {
+    margin-right: 16px;
+}
+
+.contact .section-content .contact-form .input-row input:last-child {
+    margin-left: 16px;
+}
+
+.contact .section-content .contact-form textarea{
+    background-color: #ccc6c6;
+    border-color: #616161;
+    border-radius: 8px;
+    width:100%;
+    padding:25px;
+}
+
+.contact .section-content .contact-form .btn-form{
+    color: #fff;
+    text-decoration: none;
+    background-color: #fbad27;
+    border-radius: 24px;
+    padding: 10px 60px;
+    border:none;
+    margin-top: 30px;
+}
+.contact .section-content .contact-form .btn-form:hover {
+    cursor: pointer;
+    background-color: #ff810b;
+}
+
+.section-content label {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #616161;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #dbd6d7;   
+}
+
+.section-footer {
+    max-width: 970px;
+    padding: 45px 15px 45px;
+    justify-content:space-evenly;
+    margin: auto;
+}
+
+.info h4, .info p, .info i {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #757575;
+    width: 300px;
+    margin: 0 auto 0;
+}
+
+.info a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.info i {
+    font-size: 2rem;
+}
+
+.footer .info i {
+    color: #fbad27;
+}
+
+.copy {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*PRODUKTAI*/
+.products {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.products h1 {
+    color: #ff810b; 
+}
+
+.products p {
+    color: #757575;
+}
+
+.products .container p {
+    font-size: 1.25rem;
+    line-height: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    max-width: 632px;
+    margin: 0 auto;
+}
+
+.section-products .product {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #616161;
+    padding: 40px;
+    box-shadow: 16px 30px 16px #ebe9e6;
+    border-radius: 8px;
+    max-width: 970px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.products .container1 .container {
+    padding: 60px 0 100px;
+}
+
+/*KONTAKTAI*/
+.info1 {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.02em;
+    color: #757575;
+    width: 300px;
+    margin: 0 auto 0;
+}
+
+.info1 a {
+    color: #757575;
+    text-decoration: none;
+
+}
+.info1 iframe {
+    padding-top: 40px;
+}
+.content1 .container1 .section-heading {
+    padding-top: 50px;
+}
+.content1 .container1 .section-content {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.content1 .container1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/*PRITAIKYMAS MOBILIEMS ĮRENGINIAMS*/
+
+@media all and (max-width:970px) {
+    
+    .container, .container1, .container2, .carousel  {
+        max-width: 900px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .site-header .container {
+        display: block;
+    }
+
+    .logo {
+        float: right;
+    }
+
+    .mobile-nav {
+        position: relative;
+        width: 250px;
+        display: block;
+    }
+    .mobile-nav li {
+        list-style: none;
+    }
+    
+    .mobile-nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top:60px;
+        padding:20px;
+        background-color: #beb4b4;
+    }
+    
+    .mobile-nav a{
+        color:#000;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin:0 5px;
+        padding:10px 17px;
+        display: block;
+    }
+
+    .mobile-nav a:hover, .mobile-nav a:active {
+        color: #fff;
+        background-color: #beb4b4;
+        border-radius: 5px;
+    }
+    
+    .mobile-nav a.icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        color: #000;
+        font-size: 1.5rem;
+    }
+
+    .about-me, .contact, .content1, .products {
+        max-width: 90%;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 0;
+    }  
+   
+    .about, .contact-form, .info, .advantages, .info1, .section-content, .product, .bg-white {
+        max-width: 90%;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:860px) {
+
+    .section-content, .section-footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px 20px;
+    }
+
+    .section-footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .container, .container1, .container2, .carousel {
+        max-width: 800px;
+    }
+}
+
+@media all and (max-width:830px) {
+
+    .container, .container1, .container2, .carousel {
+        max-width: 760px;
+    }
+
+    .site-header {
+        max-width: auto;
+    }
+  
+   .about-me p, .contact p, .content1 p, .products p, .karusele p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.02em;
+   }
+
+   .bg-white {
+       width: 210px;
+    }
+
+    .bg-white img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .info a, .info h4{
+        line-height: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .info i{
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .info1 iframe {
+        padding-top: 40px;
+        display: none;
+    }
+
+    .section-heading h2, .info1 h2, .about-me h2, .contact h2,
+    .content1 .container1 .section-heading h2, .content1 .container1 .section-heading h2,
+    .karusele h2 {
+        font-size: 2.5rem;
+    }
+
+   footer p{
+        font-size: 0.75rem;
+    }
+}
+@media all and (max-width:780px) {
+
+    .about, .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-products .product, .section-footer {
+        max-width: 520px;
+    }
+
+    .products .container p {
+        max-width: 520px;
+    }
+    .about p, .product p {
+        text-align: left;
+        padding: 0;
+    }
+
+    .about-me img, .products img {
+        max-width: 200px;
+        max-height: 200px;
+        margin-top: 50px;
+    }
+
+    .container, .container1, .container2, .carousel, .product {
+        max-width: 600px;
+        justify-content: center;
+    }
+
+    section .container1 {
+        padding: 20px 0 20px;
+    }
+
+    section .products {
+        max-width: 700px;
+        margin:0;
+        padding:0;
+    }
+
+    .bg-white p {
+        font-size: 0.9rem;
+        line-height: 1.075rem;
+    }
+
+    .contact-form {
+        margin:0;
+    }
+}
+
+@media all and (max-width:540px) {
+    
+    .bg-white {
+        width: 180px;
+     }
+ 
+    .bg-white img {
+         width: 100px;
+         height: 100px;
+     }
+
+    .container, .container1, .container2, .carousel {
+        max-width: 480px;
+    }
+}
+
+@media all and (max-width:480px) {
+
+    .container, .container1, .container2, .carousel {
+        max-width: 400px;
+    }
+    
+    .products h1, .hero h1 {
+       font-size: 3.5rem;
+   }
+
+   .products .container p {
+    font-size: 1rem;
+    line-height: 2.5rem;
+   }
+
+   .about-me p, .contact p, .content1 p, .products p, .karusele p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.02em;
+   }
+
+    .bg-white img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .info a, .info h4{
+        line-height: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .info1 iframe {
+        display: none;
+    }
+
+    .section-heading h2, .info1 h2, .about-me h2, .karusele h2 {
+        font-size: 2.5rem;
+    }
+
+    .content1 .container1 .section-content {
+        flex-direction: column;;
+    }
+
+    footer p{
+        font-size: 0.75rem;
+    }
+}
+
+@media all and (max-width:385px) {
+
+    .section-heading h2, .info1 h2, .about-me h2, .karusele h2 {
+        font-size: 2rem;
+        max-width: 300px;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .hero h1, .products h1 {
+        line-height: 3.25rem;
+    }
+
+    .hero p, .products .container1 .container p {
+        line-height: 2rem;
+        padding: 20px 0 20px;
+    }
+
+    .products .container1 .container a {
+        padding: 15px;;
+    }
+    
+    .container, .container1, .container2, .carousel {
+        max-width: 300px;
+        padding:5px;
+    }
+
+    .section-products {
+        max-width: 350px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .product {
+        max-width: 280px;
+        padding: 20px;
+    }
+
+    .product p {
+        padding:5px;
+    }
+
+    section .container1 {
+        padding: 50px 0 30px;
+    }
+
+   .products {
+        margin-left: 0;
+    }
+
+    .container2 {
+        margin:0;
+    }
+
+    .contact .section-content .contact-form .input-row input {
+        padding: 3px 5px;
+        flex-direction: column;
+        width:calc(100% - 18px);
+    }
+
+    .contact .section-content .contact-form .input-row input:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .contact .section-content .contact-form .input-row input:last-child {
+        margin-left: 0;
+    }
+
+    .bg-white {
+        margin: 0;
+        padding: 0;
+    }
+
+}
